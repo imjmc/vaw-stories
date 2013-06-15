@@ -1,0 +1,508 @@
+/*
+Theme Name: OcenolisMagazine
+Theme URI: http://www.simplewpthemes.com
+Version: 1.0
+Author: sin2384
+Author URI: http://www.simplewpthemes.com
+Description: Free Wordpress theme by <a href="http://www.simplewpthemes.com/">SimpleWPThemes.com</a>. Please read READ ME.TXT for usage instructions!
+*/
+@import url("css/comments.css");
+@import url("css/reset.css");
+@import url("css/slide.css");
+@import url("css/featuredcats.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+/***************LINKS*************************/
+
+a:link, a:visited {
+  color: #45b7d7;
+  text-decoration: none;
+}
+a:hover {
+  color: #f0a7a7;
+}
+/***************END LINKS*************************/
+
+html body {
+  background: #dfdfdd url(images/header.gif) repeat-x;
+  font-size: 13px;
+  font-family: Arial, Verdana, Tahoma, Times New Roman;
+  line-height: 1.5em;
+  color: #8a8a8a;
+}
+
+/***************LAYOUT*************************/
+
+#mainwrap {
+  margin: 0 auto;
+  width: 968px;
+  background: url(images/shadow.png) repeat-y;
+  overflow: hidden;
+}
+#header {
+  width: 960px;
+  height: 94px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+#blogtitle {
+  text-transform: uppercase;
+  float: left;
+  padding-top: 5px;
+}
+.description {
+  color: #bbbbbb;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: -5px;
+}
+.adv {
+  float: right;
+  margin: -5px 0px 0 0;
+}
+
+/* -------- START PAGE MENU -------- */
+
+#top {
+  clear: both;
+  width: 960px;
+  height: 54px;
+  margin: 0 auto -5px;
+  position: relative;
+  z-index: 9999;
+}
+#top li {
+  float: left;
+  line-height: 44px;
+}
+#top li a {
+  float: left;
+  display: block;
+  padding: 0 17px;
+  color: #fff;
+  font-size: 16px;
+  margin: 2px 10px 0 0;
+}
+#top li li {
+  display: none;
+}
+#top li.current_page_item a, #top li a:hover {
+  background: #45b7d7;
+  color: #fff;
+}
+
+/* -------- END PAGE MENU -------- */
+
+#s {
+  width: 146px;
+  padding: 9px 0 9px 5px;
+  padding-bottom: 8px\0/;
+  margin-bottom: 5px;
+  color: #c2c1c1;
+  font-size: 11px;
+  border: 1px solid #c7c7c6;
+}
+*+html #s {
+  padding-bottom: 7px;
+}
+#contentwrap {
+  float: left;
+  width: 525px;
+}
+#right-col {
+  width: 388px;
+  float: right;
+  overflow: hidden;
+  max-height: 100%;
+  padding-top: 30px;
+  margin-right: 25px;
+  display: inline;
+}
+.sidebar-right {
+  float: right;
+  width: 200px;
+}
+.sidebar-left {
+  float: left;
+  width: 150px;
+}
+#sidebar2w {
+  clear: both;
+  width: 100%;
+  background: #f0a7a7 url(images/sbbg.jpg) repeat-x scroll top;
+  overflow: hidden;
+  color: #fff;
+  font-family: Arial;
+}
+#sidebar2 {
+  width: 960px;
+  margin: 0 auto;
+  padding: 41px 0 0;
+  overflow: hidden;
+}
+#footer1, #footer2, #footer3 {
+  width: 190px;
+  float: left;
+  margin-right: 65px;
+}
+#footer4 {
+  margin-right: 0;
+  float: left;
+  width: 190px;
+}
+#sidebar2 h3 {
+  color: #ffffff;
+  font-size: 21px;
+  padding-bottom: 5px;
+  margin-bottom: 35px;
+}
+.widget {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.widget a, .widget a:visited {
+  color: #fff;
+}
+.widget a:hover {
+  color: #a76f6f;
+  text-decoration: underline;
+}
+.widget ul li {
+  padding: 8px 0 8px 0px;
+  margin-left: 0;
+  background: url(images/li.gif) repeat-x scroll bottom;
+}
+.widget li li {
+  background: url(images/li.gif) repeat-x scroll top;
+}
+.widget ul.children, .side-widgetl ul.children {
+  margin: 8px 0 -8px 0;
+}
+/* -------- ADVERT -------- */
+
+ .add1 {
+  margin: 0 0 10px 0px;
+}
+.add2 {
+  margin: 0 0px 10px 0;
+}
+
+/* -------- END ADVERT -------- */
+
+.custom_images img {
+  margin: 0px 2px 0px 4px;
+  padding: 0;
+}
+#footerw {
+  width: 100%;
+  clear: both;
+  background: #45b7d7 url(images/footer.gif) repeat-x scroll top;
+  overflow: hidden;
+  padding: 20px 0;
+}
+#footer {
+  width: 960px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 11px;
+}
+#footer a, #footer a:visited {
+  color: #fff;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+.inside {
+  padding: 30px 50px;
+}
+/* -------- END WP LAYOUT -------- */
+
+/* -------- START WP STYLES -------- */
+.sidebar-right h3, .sidebar-left h3 {
+  padding: 0px 0 20px;
+  color: #45b7d7;
+  font-size: 21px;
+}
+.side-widget {
+  clear: both;
+  width: 200px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.side-widgetl {
+  clear: both;
+  width: 150px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.sidebar-left ul.children, .sidebar-right ul.children {
+  margin: 4px 0 -4px 0;
+}
+.sidebar-right ul li, .sidebar-left ul li {
+  padding: 4px 0 4px 0px;
+  margin-left: 0;
+}
+.side-widget a, .side-widget a:visited, .side-widgetl a, .side-widgetl a:visited {
+  color: #8a8a8a;
+}
+.side-widget a:hover, .side-widgetl a:hover {
+  color: #f0a7a7;
+  text-decoration: underline;
+}
+.textwidget {
+  padding: 0px;
+}
+.tagcloud a, .tagcloud a:visited {
+  display: inline-block;
+  padding: 3px 10px;
+  overflow: hidden;
+  background: #f0a7a7;
+  color: #fff;
+  text-shadow: 1px 0 1px #a7a7a7;
+  font-size: 11px !important;
+}
+*+html .tagcloud a {
+  margin-bottom: 5px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ .tagcloud a { margin-bottom: 5px; }
+}
+.tagcloud a:hover {
+  background: #45b7d7;
+  color: #fff;
+  text-shadow: 1px 0 1px #a7a7a7;
+  text-decoration: none !important;
+}
+
+
+/***************POST STYLES*************************/
+h2.title {
+  margin-bottom: 25px;
+  line-height: 28px;
+  font-size: 28px;
+}
+h2.title a, h2.title a:visited {
+  color: #d88f8f;
+}
+.meta {
+  background: #ccc;
+  padding: 5px;
+}
+.commwrap {
+  position: relative;
+}
+.comm {
+  background: url(images/comm.png) no-repeat scroll center;
+  width: 53px;
+  height: 36px;
+  padding-top: 17px;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  float: left;
+  margin-left: -74px;
+  position: absolute;
+  z-index: 999999999;
+}
+a.comm, a.comm:visited {
+  color: #fff;
+}
+.morebg {
+  background: #f0a7a7;
+  width: 50%;
+  height: 32px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+a.more-link {
+  background: #f0a7a7 url(images/more.jpg) no-repeat scroll right;
+  color: #fff;
+  text-transform: lowercase;
+  font-size: 11px;
+  line-height: 32px;
+  padding: 0px 10px 0 0;
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+  float: left;
+  margin-left: -50px;
+  position: absolute;
+}
+.postmetadata {
+  margin: 15px 0 -25px 0;
+}
+.post, .page {
+  margin-bottom: 45px;
+  padding-bottom: 50px;
+  background:url(images/sep.gif) no-repeat scroll bottom left;
+  overflow: hidden;
+}
+.entry {
+  margin: 10px 0 15px;
+  line-height: 21px;
+  overflow: hidden;
+}
+.entry h2 {
+  margin-bottom: 0.4em;
+}
+.entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
+  margin-top: 15px;
+}
+.entry p {
+  margin-bottom: 10px;
+}
+.entry img, .post_thumbnail {
+  padding: 5px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+}
+.entry th {
+  padding: 0;
+  margin-right: 2px;
+}
+.entry li {
+  list-style: circle inside;
+}
+.entry ol li {
+  list-style: decimal inside;
+}
+blockquote {
+  border-left: 10px solid #666666;
+  margin-left: 20px;
+}
+blockquote p {
+  padding: 10px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 10px 0px 0px;
+}
+.alignright {
+  float: right;
+  margin: 5px 0px 0px 10px;
+}
+img.aligncenter {
+  display: block;
+  margin: 0 auto 5px;
+}
+/***************END POST STYLES*************************/
+#wp-calendar caption {
+  background: #45b7d7;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#wp-calendar th {
+font-style: normal;
+text-transform: capitalize;
+}
+#wp-calendar th {
+font-style: normal;
+text-transform: capitalize;
+}
+#wp-calendar td {
+letter-spacing: normal;
+padding: 2px 0;
+text-align: center;
+}
+#wp-calendar {
+empty-cells: show;
+font-size: 14px;
+margin: 0;
+width: 90%;
+}
+#wp-calendar a:hover {
+  background: #45b7d7;
+  color: #fff;
+}
+#wp-calendar td:hover, #wp-calendar #today {
+  background: #45b7d7;
+  color: #fff;
+}
+li.pagenav, li.categories, li.linkcat {
+  list-style:none;
+}
+h2.pagetitle {
+  margin: 0 0 20px 0px;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+}
+p.center {
+  margin: 10px 0;
+}
+/* -------- END WP STYLES -------- */
+
+
+
+/* -------- TABLES -------- */
+#contentwrap table{font-size:1.2em;margin:5px 0 25px 1px;}
+#contentwrap table td{padding:8px;border: 1px solid #ccc;}
+/* -------- END TABLES -------- */
+
+
+/* -------- PAGE NAVIGATION -------- */
+
+.wp-pagenavi{
+  clear:both;
+  margin:20px 0 20px;
+  font-size: 11px;
+}
+.wp-pagenavi span.pages,.wp-pagenavi span.extend{
+  background:#fff;
+  border:1px solid #c7c7c6;
+  color:#8a8a8a;
+  margin:2px;
+  padding:4px 8px;
+}
+.wp-pagenavi a,.wp-pagenavi a:link,.wp-pagenavi a:visited{
+  background:#fff;
+  border:1px solid #c7c7c6;
+  color:#8a8a8a;
+  margin:2px;
+  padding:4px 8px;
+  text-decoration:none;}
+.wp-pagenavi span.current,.wp-pagenavi a:hover{
+  background:#fff;
+  border:1px solid #45b7d7;
+  color:#f0a7a7;
+  margin:2px;
+  padding:4px 8px;
+}
+/* -------- END PAGE NAVIGATION -------- */
+
+/* -------- SUBSCRIPTION -------- */
+ul#topsoc {
+  margin-top: -5px;
+}
+ul#topsoc li {
+  line-height: 50px !important;
+  background: none !important;
+  padding: 0 !important;
+}
+ul#topsoc li a {
+  padding: 32px 0px 32px 43px !important;
+  margin: 0;
+}
+a#twitter {
+  background: none;
+  background: url(images/twitter.png) no-repeat scroll 0px 24px !important;
+}
+a#socrss {
+  background: none;
+  background:url(images/rss.png) no-repeat scroll 0px 24px !important;
+}
+a#email {
+  background: none;
+  background: url(images/email.png) no-repeat scroll 0px 24px !important;
+}
+/* -------- END SUBSCRIPTION -------- */
+
+.flickr_badge_image { float: left; margin-top: 10px;}
+.flickr_badge_image img { width: 54px; height: 47px; padding: 0px; margin: 0 10px 0px 0; border:1px solid #d58686;  float: left; }
+#flickr_badge_image3 img, #flickr_badge_image6 img, #flickr_badge_image9 img, #flickr_badge_image12 img {
+  margin-right: 0;
+}
