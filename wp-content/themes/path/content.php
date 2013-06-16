@@ -39,7 +39,7 @@ do_atomic( 'before_entry' ); // path_before_entry ?>
 			<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
 			<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( 'Published by [entry-author] on [entry-published] [entry-comments-link before=" | "] [entry-edit-link before=" | "]', 'path' ) . '</div>' ); ?>
 		</header><!-- .entry-header -->
-		
+		<?php// echo do_shortcode('[fbcomments]'); ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 			<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'path' ), 'after' => '</p>' ) ); ?>
